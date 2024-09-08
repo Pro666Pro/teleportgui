@@ -751,6 +751,6 @@ TeleportInGame8:AddButton({
 TeleportInGame8:AddButton({
 	Name = "Teleport Bossfight Arena",
 	Callback = function()
-			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(599.815185546875, 65.99541473388672, -321.8311462402344)
+			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(599, 66, -322)
 	 end
 })
