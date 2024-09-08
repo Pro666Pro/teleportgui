@@ -1,4 +1,4 @@
-local GameName = "teleport gui - by nexer"
+local GameName = "teleport gui :3 - by nexer"
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({IntroText = "teleport gui >:]", IntroIcon = "rbxassetid://15315284749",Name = GameName, HidePremium = false, SaveConfig = true, ConfigFolder = "Tutorial"})
@@ -173,71 +173,6 @@ B5.BrickColor = BrickColor.new("Dark orange")
 B5.Parent = workspace:FindFirstChild("Bed")
 end
 
-local Script = Window:MakeTab({
-	Name = "Script",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-local Scripts = Script:AddSection({
-	Name = "some cool scripts"
-})
-
-Scripts:AddButton({
-	Name = "giang hub",
-	Callback = function()
-			 loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Slap_Battles/main/Slap_Battles.lua"))()
-	 end
-})
-
-Scripts:AddButton({
-	Name = "gaster hub",
-	Callback = function()
-			 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Dusty1234567890/Loader/main/GHUBV0.2.")))()
-	 end
-})
-
-Scripts:AddButton({
-	Name = "OMOHOTA glove abuser",
-	Callback = function()
-			 loadstring(game:HttpGet("https://raw.githubusercontent.com/Donjosx/SBS/main/Gloves_Abuser%25by%25OMOSCRIPTS.lua"))()
-	 end
-})
-
-Scripts:AddButton({
-	Name = "OMOHOTA avatar glove abuser",
-	Callback = function()
-			 loadstring(game:HttpGet("https://pastefy.app/1mtq82cl/raw"))()
-	 end
-})
-
-Scripts:AddButton({
-	Name = "OMOHOTA firework abuser",
-	Callback = function()
-			 loadstring(game:HttpGet("https://pastefy.app/eAFsNQoe/raw",true))();
-	 end
-})
-
-Scripts:AddButton({
-	Name = "fly gui v3",
-	Callback = function()
-			 loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
-	 end
-})
-
-Scripts:AddButton({
-	Name = "btools client side",
-	Callback = function()
-			 loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
-	 end
-})
-
-Scripts:AddButton({
-	Name = "chat spy",
-	Callback = function()
-			 loadstring(game:HttpGet("https://raw.githubusercontent.com/dehoisted/Chat-Spy/main/source/main.lua", true))()
-	 end
-})
 -- TP ANOTHER GAME --
 
 local Teleport = Window:MakeTab({
@@ -576,6 +511,17 @@ local TeleportInGame7 = TeleportInPlace7:AddSection({
 	Name = "Use Only In Christmas Event"
 })
 
+local TeleportInPlace8 = Window:MakeTab({
+	Name = "Where Guide Resides",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local TeleportInGame8 = TeleportInPlace8:AddSection({
+	Name = "Use Only In Where Guide Resides"
+})
+
+
 TeleportInGame:AddDropdown({
 	Name = "Teleport Safe Place",
 	Default = "",
@@ -801,9 +747,24 @@ TeleportInGame7:AddToggle({
 slap = Value
 if slap == true then
 repeat task.wait()
+for i, v in pairs(workspace:GetChildren()) do
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(156.81568908691406, 182.17202758789062, -112.55520629882812)
 task.wait()
 until slap == false
 end
+	 end
+})
+
+TeleportInGame8:AddButton({
+	Name = "Start Enter Bossfight",
+	Callback = function()
+			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3258, -68, 823)
+	 end
+})
+
+TeleportInGame8:AddButton({
+	Name = "Teleport Bossfight Arena",
+	Callback = function()
+			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(599.815185546875, 65.99541473388672, -321.8311462402344)
 	 end
 })
