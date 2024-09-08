@@ -741,20 +741,6 @@ TeleportInGame7:AddButton({
 	 end
 })
 
-TeleportInGame7:AddToggle({
-	Name = "Loop Teleport To Flag",
-	Callback = function()
-slap = Value
-if slap == true then
-repeat task.wait()
-for i, v in pairs(workspace:GetChildren()) do
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(156.81568908691406, 182.17202758789062, -112.55520629882812)
-task.wait()
-until slap == false
-end
-	 end
-})
-
 TeleportInGame8:AddButton({
 	Name = "Start Enter Bossfight",
 	Callback = function()
