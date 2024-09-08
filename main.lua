@@ -800,7 +800,9 @@ TeleportInGame7:AddToggle({
 	Callback = function()
 slap = Value
 if slap == true then
-repeat game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(156.81568908691406, 182.17202758789062, -112.55520629882812)
+repeat task.wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(156.81568908691406, 182.17202758789062, -112.55520629882812)
+task.wait()
 until slap == false
 end
 	 end
