@@ -1,7 +1,7 @@
-local GameName = "Slap Battles 👏 - by nexer"
+local GameName = "teleport gui - by nexer"
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({IntroText = "nexer hub >:]", IntroIcon = "rbxassetid://15315284749",Name = GameName, HidePremium = false, SaveConfig = true, ConfigFolder = "Tutorial"})
+local Window = OrionLib:MakeWindow({IntroText = "teleport gui >:]", IntroIcon = "rbxassetid://15315284749",Name = GameName, HidePremium = false, SaveConfig = true, ConfigFolder = "Tutorial"})
 
 OrionLib:MakeNotification({Name = "Warning",Content = "Use at your own risk.",Image = "rbxassetid://7733658504",Time = 5})
 
@@ -507,7 +507,7 @@ TeleportToGames3:AddButton({
 -- TP IN GAME --
 
 local TeleportInPlace = Window:MakeTab({
-	Name = "Teleport In-Game",
+	Name = "Slap Battles",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -516,27 +516,63 @@ local TeleportInGame = TeleportInPlace:AddSection({
 	Name = "Use Only In Slap Battles"
 })
 
-local TeleportInGame2 = TeleportInPlace:AddSection({
+local TeleportInPlace2 = Window:MakeTab({
+	Name = "Elude Maze",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local TeleportInGame2 = TeleportInPlace2:AddSection({
 	Name = "Use Only In Elude Maze"
 })
 
-local TeleportInGame3 = TeleportInPlace:AddSection({
+local TeleportInPlace3 = Window:MakeTab({
+	Name = "Ice Trials",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local TeleportInGame3 = TeleportInPlace3:AddSection({
 	Name = "Use Only In Ice Trials"
 })
 
-local TeleportInGame4 = TeleportInPlace:AddSection({
+local TeleportInPlace4 = Window:MakeTab({
+	Name = "The Null Zone",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local TeleportInGame4 = TeleportInPlace4:AddSection({
 	Name = "Use Only In Null Zone"
 })
 
-local TeleportInGame5 = TeleportInPlace:AddSection({
+local TeleportInPlace5 = Window:MakeTab({
+	Name = "The Staff Application",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local TeleportInGame5 = TeleportInPlace5:AddSection({
 	Name = "Use Only In Staff Application"
 })
 
-local TeleportInGame6 = TeleportInPlace:AddSection({
+local TeleportInPlace6 = Window:MakeTab({
+	Name = "barzil",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local TeleportInGame6 = TeleportInPlace6:AddSection({
 	Name = "Use Only In barzil"
 })
 
-local TeleportInGame7 = TeleportInPlace:AddSection({
+local TeleportInPlace7 = Window:MakeTab({
+	Name = "Christmas Event",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local TeleportInGame7 = TeleportInPlace7:AddSection({
 	Name = "Use Only In Christmas Event"
 })
 
@@ -759,7 +795,7 @@ TeleportInGame7:AddButton({
 	 end
 })
 
-TeleportInGame7:AddButton({
+TeleportInGame7:AddToggle({
 	Name = "Loop Teleport To Flag",
 	Callback = function()
 slap = Value
